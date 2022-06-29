@@ -25,12 +25,18 @@ function App() {
     const toggelTaskDone = (id) => {
         setTasks(tasks => tasks.map(task => {
             if (task.id === id) {
-                return {...task, done: !task.done};
+                return { ...task, done: !task.done };
             }
 
             return task;
         }));
     };
+
+    const markAllDone = () => {
+        setTasks(tasks => tasks.map(task => {
+            return { ...task, done: true };
+        }))
+    }
 
     return (
         <Container>
@@ -47,6 +53,7 @@ function App() {
                         tasks={tasks}
                         hideDone={hideDone}
                         toggleHideDone={toggleHideDone}
+                        markAllDone={markAllDone}
                     />
                 }
                 body={
