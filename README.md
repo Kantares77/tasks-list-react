@@ -20,7 +20,7 @@ You can use two buttons on the right section: The 1st one hides or shows finishe
 
 ## Application under the following link:
 
-https://kantares77.github.io/tasks-list-immutability/
+https://kantares77.github.io/tasks-list-react/
 
 ## Technologies
 
