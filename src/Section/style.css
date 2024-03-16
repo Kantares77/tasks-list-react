@@ -1,6 +1,6 @@
 .section {
     margin: 10px 0;
-    background: white;
+    background: hsl(0, 6%, 72%);
     border-radius: 5px;
     box-shadow: 1px 1px 2px hsl(0deg 4% 66%);
 }
