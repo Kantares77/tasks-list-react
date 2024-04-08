@@ -7,17 +7,17 @@ export const StyledButtons = styled.div`
 
 export const StyledButton = styled.button`
     background: transparent;
-    color: hsl(193, 94%, 33%);
+    color: ${({ theme }) => theme.colors.mirage};
     border: none;
     margin: 20px;
     transition: 0.5s;
 
     &:hover {
-        color: hsl(193, 94%, 38%);
+        color: ${({ theme }) => theme.colors.pictonBlue};
     }
 
     &:disabled {
-        color: hsl(0, 15%, 75%);
+        color: ${({ theme }) => theme.colors.coldTurkey};
     }
 
     @media (max-width: 767px) {

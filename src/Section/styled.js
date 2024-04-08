@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
     margin: 10px 0;
-    background: hsl(0, 6%, 100%); 
+    background: ${({ theme }) => theme.colors.white}; 
     border-radius: 5px;
-    box-shadow: 1px 1px 2px hsl(0deg 4% 66%);
+    box-shadow: 1px 1px 2px ${({ theme }) => theme.colors.silverChalice};
 `;
 
 export const StyledHeader = styled.header`
-    border-bottom: 1px solid hsl(0deg 0% 92%);
+    border-bottom: 1px solid ${({ theme }) => theme.colors.gallery};
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;

@@ -12,25 +12,25 @@ export const StyledForm = styled.form`
 
 export const StyledInput = styled.input`
     padding: 10px;
-    border: 1px solid hsl(0deg 0% 92%);
+    border: 1px solid ${({ theme }) => theme.colors.gallery};
     border-radius: 5px;
 `;
 
 export const StyledButton = styled.button`
     padding: 10px;
     border: none;
-    background: hsl(193, 94%, 33%);
-    color: white;
+    background: ${({ theme }) => theme.colors.mirage};
+    color: ${({ theme }) => theme.colors.white};
     border-radius: 5px;
     transition: 0.5s;
 
     &:hover {
-        background: hsl(193, 94%, 38%);
+        background: ${({ theme }) => theme.colors.pictonBlue};
         transform: scale(1.1);
     }
 
     &:active {
-        background: hsl(193, 94%, 42%);
+        background: ${({ theme }) => theme.colors.blizzardBlue};
     }
 `;
 
