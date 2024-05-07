@@ -37,3 +37,7 @@ You can use two buttons on the right section: The 1st one hides or shows finishe
 - JavaScript
 
 - React
+
+- Custom Hooks
+
+- Styled Components
