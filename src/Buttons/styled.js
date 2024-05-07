@@ -12,16 +12,16 @@ export const StyledButton = styled.button`
     margin: 20px;
     transition: 0.5s;
 
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+
     &:hover {
         color: ${({ theme }) => theme.colors.pictonBlue};
     }
 
     &:disabled {
         color: ${({ theme }) => theme.colors.coldTurkey};
-    }
-
-    @media (max-width: 767px) {
-        flex-basis: 100%;
-        margin: 10px;
-    }
+    }    
 `;
