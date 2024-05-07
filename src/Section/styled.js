@@ -14,8 +14,9 @@ export const StyledHeader = styled.header`
     grid-gap: 20px;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         grid-template-columns: 1fr;
     }
 `;
