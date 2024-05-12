@@ -24,13 +24,13 @@ export const StyledButton = styled.button`
     border-radius: 5px;
     transition: 0.5s;
 
-    &:hover {
-        background: ${({ theme }) => theme.colors.pictonBlue};
+    &:hover {        
+        filter: brightness(115%);
         transform: scale(1.1);
     }
 
     &:active {
-        background: ${({ theme }) => theme.colors.blizzardBlue};
+        filter: brightness(130%);        
     }
 `;
 

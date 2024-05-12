@@ -34,26 +34,19 @@ export const Button = styled.button`
     transition: 0.5s;
 
     ${({ toggleDone }) => toggleDone && css`
-        background: ${({ theme }) => theme.colors.seaGreen};
-
-        &:hover {
-            background: ${({ theme }) => theme.colors.malachite};
-        }
-
-        &:active {
-            background: ${({ theme }) => theme.colors.mintGreen};
-        }
+        background: ${({ theme }) => theme.colors.seaGreen};        
     `}
 
     ${({ remove }) => remove && css`
-        background: ${({ theme }) => theme.colors.tamarillo};
-
-        &:hover {
-            background: ${({ theme }) => theme.colors.thunderbird};
-        }
-
-        &:active {
-            background: ${({ theme }) => theme.colors.seaPink};
-        }
+        background: ${({ theme }) => theme.colors.thunderbird};        
     `}
+
+    &:hover {        
+        filter: brightness(115%);
+        transform: scale(1.1);
+    }
+
+    &:active {
+        filter: brightness(130%);        
+    }
 `;

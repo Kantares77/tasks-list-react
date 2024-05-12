@@ -17,8 +17,12 @@ export const StyledButton = styled.button`
         margin: 10px;
     }
 
-    &:hover {
-        color: ${({ theme }) => theme.colors.pictonBlue};
+    &:hover {        
+        filter: brightness(115%);
+    }
+
+    &:active {
+        filter: brightness(130%);
     }
 
     &:disabled {
