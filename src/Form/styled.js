@@ -14,6 +14,10 @@ export const StyledInput = styled.input`
     padding: 10px;
     border: 1px solid ${({ theme }) => theme.colors.gallery};
     border-radius: 5px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        width: 100%;        
+    }
 `;
 
 export const StyledButton = styled.button`
@@ -22,7 +26,7 @@ export const StyledButton = styled.button`
     background: ${({ theme }) => theme.colors.mirage};
     color: ${({ theme }) => theme.colors.white};
     border-radius: 5px;
-    transition: 0.5s;
+    transition: 0.5s;    
 
     &:hover {        
         filter: brightness(115%);
