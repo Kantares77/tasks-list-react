@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Montserrat', sans-serif;
         word-break: break-word;
-        background: hsl(0deg 0% 92%);
+        background: ${({ theme }) => theme.colors.gallery};      
     }
 
     button {
