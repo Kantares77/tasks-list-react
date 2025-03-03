@@ -22,7 +22,7 @@ export const Item = styled.li`
 export const Content = styled.span`
     ${({ done }) => done && css`
         text-decoration: line-through;
-    `};
+    `}
 `;
 
 export const Button = styled.button`
