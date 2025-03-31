@@ -22,7 +22,7 @@ const TaskList = () => {
                     <Content
                         done={task.done}
                     >
-                        {task.id} - {task.content}
+                        {task.content}
                     </Content>
                     <Button
                         remove
