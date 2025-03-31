@@ -6,10 +6,7 @@ export const useTasks = () => {
   const [tasks, setTasks] = useState(
     localStorage.getItem("tasks")
       ? JSON.parse(localStorage.getItem("tasks"))
-      : [
-        { id: 1, content: "Umyć zęby", done: false },
-        { id: 2, content: "Zjeść kolację", done: true },
-      ]
+      : []
   );
 
   useEffect(() => {
