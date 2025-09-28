@@ -1,11 +1,11 @@
 import Form from "./Form";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
-import Section from "../../common/Section";
-import { Container } from "../../globalStyles";
-import Header from "../../common/Header";
+import Section from "../../../common/Section";
+import { Container } from "../../../globalStyles";
+import Header from "../../../common/Header";
 
-function Tasks() {
+function TasksPage () {
 
   return (
     <Container>
@@ -24,4 +24,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;
