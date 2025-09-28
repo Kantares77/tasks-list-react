@@ -5,7 +5,7 @@ import Section from "../../../common/Section";
 import { Container } from "../../../globalStyles";
 import Header from "../../../common/Header";
 
-function TasksPage () {
+function TasksPage() {  
 
   return (
     <Container>
