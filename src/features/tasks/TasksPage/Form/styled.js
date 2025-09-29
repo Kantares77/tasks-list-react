@@ -10,15 +10,15 @@ export const StyledForm = styled.form`
     }
 `;
 
-export const StyledInput = styled.input`
-    padding: 10px;
-    border: 1px solid ${({ theme }) => theme.colors.gallery};
-    border-radius: 5px;    
+// export const StyledInput = styled.input`
+//     padding: 10px;
+//     border: 1px solid ${({ theme }) => theme.colors.gallery};
+//     border-radius: 5px;    
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-        width: 100%;       
-    }
-`;
+//     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+//         width: 100%;       
+//     }
+// `;
 
 export const StyledButton = styled.button`
     padding: 10px;
