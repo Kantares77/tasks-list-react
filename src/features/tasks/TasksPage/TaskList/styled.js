@@ -1,4 +1,19 @@
 import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom";
+
+export const StyledLink = styled(NavLink)`
+    color: ${({ theme }) => theme.colors.mirage};
+    text-decoration: none;
+
+        &:hover {        
+            filter: brightness(115%);
+            transform: scale(1.1);
+        }
+
+        &:active {
+            filter: brightness(130%);        
+        }
+`;
 
 export const List = styled.ul`
     list-style-type: none;
