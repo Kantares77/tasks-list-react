@@ -29,4 +29,3 @@ export const Wrapper = styled.div`
 //         color: ${({ theme }) => theme.colors.coldTurkey};
 //     }    
 // `;
->>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637
