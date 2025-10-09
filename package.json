@@ -4,7 +4,11 @@
   "private": true,
   "homepage": "https://kantares77.github.io/tasks-list-react/",
   "dependencies": {
+<<<<<<< HEAD
     "@reduxjs/toolkit": "^2.8.2",
+=======
+    "@reduxjs/toolkit": "^2.6.0",
+>>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,7 +16,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^5.3.3",
+=======
+    "react-router-dom": "^5.3.3",  
+>>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637
     "react-scripts": "5.0.1",
     "redux-saga": "^1.3.0",
     "styled-components": "^6.1.8",

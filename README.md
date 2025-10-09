@@ -38,6 +38,8 @@ You can use two buttons on the right section: The 1st one hides or shows finishe
 
 - React
 
+- Redux
+
 - Custom Hooks
 
 - Styled Components

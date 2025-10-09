@@ -1,11 +1,7 @@
 import styled from "styled-components";
 
-export const StyledButtons = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-`;
-
-export const StyledButton = styled.button`
+<<<<<<< HEAD
+export default styled.button`
     background: transparent;
     color: ${({ theme }) => theme.colors.mirage};
     border: none;
@@ -29,3 +25,34 @@ export const StyledButton = styled.button`
         color: ${({ theme }) => theme.colors.coldTurkey};
     }    
 `;
+=======
+export const Wrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+// export const StyledButton = styled.button`
+//     background: transparent;
+//     color: ${({ theme }) => theme.colors.mirage};
+//     border: none;
+//     margin: 20px;
+//     transition: 0.5s;
+
+//     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+//         flex-basis: 100%;
+//         margin: 10px;
+//     }
+
+//     &:hover {        
+//         filter: brightness(115%);
+//     }
+
+//     &:active {
+//         filter: brightness(130%);
+//     }
+
+//     &:disabled {
+//         color: ${({ theme }) => theme.colors.coldTurkey};
+//     }    
+// `;
+>>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637

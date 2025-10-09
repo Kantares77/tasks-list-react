@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import { useHistory, useLocation } from "react-router-dom";
 import Input from "../../Input";
+=======
+import { useLocation } from "react-router-dom";
+import Input from "../../Input";
+import { useHistory } from "react-router-dom";
+>>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637
 import { Wrapper } from "./styled";
 import searchQueryParamName from "../searchQueryParamName";
 
@@ -28,5 +34,9 @@ export default () => {
                 onChange={onInputChange}
             />
         </Wrapper>
+<<<<<<< HEAD
     );
+=======
+    )
+>>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637
 };
