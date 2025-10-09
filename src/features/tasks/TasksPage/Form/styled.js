@@ -10,19 +10,6 @@ export const StyledForm = styled.form`
     }
 `;
 
-<<<<<<< HEAD
-=======
-// export const StyledInput = styled.input`
-//     padding: 10px;
-//     border: 1px solid ${({ theme }) => theme.colors.gallery};
-//     border-radius: 5px;    
-
-//     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-//         width: 100%;       
-//     }
-// `;
-
->>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637
 export const StyledButton = styled.button`
     padding: 10px;
     border: none;
