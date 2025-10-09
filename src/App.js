@@ -1,50 +1,32 @@
-import Form from "./Form";
-import Tasks from "./Tasks";
-import Buttons from "./Buttons";
-import Section from "./Section";
-import { Container } from "./globalStyles";
-import Header from "./Header";
-import { useTasks } from "./useTasks";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import TasksPage from "./features/tasks/TasksPage";
+import TaskPage from "./features/tasks/TaskPage";
+import AuthorPage from "./features/author/AuthorPage";
+import { StyledNavLink } from "./styled";
 
-function App() {
-  const {
-    tasks,
-    hideDone,
-    removeTask,
-    toggleTaskDone,
-    markAllDone,
-    addNewTask,
-    toggleHideDone,
-  } = useTasks();
-
-  return (
-    <Container>
-      <Header title="Lista zadań" />
-      <Section
-        title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
-      />
-      <Section
-        title="Lista zadań"
-        body={
-          <Tasks
-            tasks={tasks}
-            hideDone={hideDone}
-            removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
-          />
-        }
-        extraHeaderButtons={
-          <Buttons
-            tasks={tasks}
-            hideDone={hideDone}
-            toggleHideDone={toggleHideDone}
-            markAllDone={markAllDone}
-          />
-        }
-      />
-    </Container>
-  );
-}
-
-export default App;
+export default () => (
+    <HashRouter>
+        <nav>
+            <ul>
+                <li>
+                    <StyledNavLink to="/zadania">Zadania</StyledNavLink>
+                </li>
+                <li>
+                    <StyledNavLink to="/autor">O autorze</StyledNavLink>
+                </li>
+            </ul>
+            <Switch>
+                <Route path="/zadania/:id">
+                    <TaskPage />
+                </Route>
+                <Route path="/zadania">
+                    <TasksPage />
+                </Route>
+                <Route path="/autor">
+                    <AuthorPage />
+                </Route>
+                <Redirect to="/zadania" />
+            </Switch>
+        </nav>
+    </HashRouter>
+);
