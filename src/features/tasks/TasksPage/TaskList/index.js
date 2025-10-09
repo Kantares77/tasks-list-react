@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-import { useSelector, useDispatch } from "react-redux";
-import { List, Item, Content, Button } from "./styled";
-import { removeTask, selectHideDone, selectTasksByQuery, toggleTaskDone } from "../../tasksSlice";
-import { Link, useLocation } from "react-router-dom";
-import searchQueryParamName from "../searchQueryParamName";
-=======
 import { useDispatch, useSelector } from "react-redux";
 import { List, Item, Content, Button, StyledLink } from "./styled";
 import { toggleTaskDone, removeTask, selectHideDone, selectTasksByQuery } from "../../tasksSlice";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import searchQueryParamName from "../searchQueryParamName";
 import { toTask } from "../../../../routes";
->>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637
 
 const TaskList = () => {
     const location = useLocation();
@@ -38,13 +30,9 @@ const TaskList = () => {
                     <Content
                         done={task.done}
                     >
-<<<<<<< HEAD
-                        <Link to={`/zadania/${task.id}`}>{task.content}</Link>
-=======
                         <StyledLink to={toTask({ id: task.id })}>
                             {task.content}
                         </StyledLink>
->>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637
                     </Content>
                     <Button
                         remove
@@ -54,11 +42,7 @@ const TaskList = () => {
                     </Button>
                 </Item>)}
         </List >
-<<<<<<< HEAD
-    )
-=======
     );
->>>>>>> 50f717d03c6ec2656a2ac513e53b6a8c7e2cc637
 };
 
 export default TaskList;
