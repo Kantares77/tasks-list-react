@@ -11,8 +11,7 @@ function* fetchExampleTasksHandler() {
     }
 }
 
-export function* watchFetchExampleTasks() {
-    console.log("Saga działa");
+export function* watchFetchExampleTasks() {   
     yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
 }
 
