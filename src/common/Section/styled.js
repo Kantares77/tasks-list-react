@@ -23,6 +23,7 @@ export const StyledHeader = styled.header`
 
 export const StyledBody = styled.div`
     padding: 20px;
+    margin: 0 10px;
 `;
 
 export const StyledTitle = styled.h2`
