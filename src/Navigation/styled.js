@@ -5,9 +5,13 @@ export const StyledNavLink = styled(NavLink)`
     color: ${({ theme }) => theme.colors.white};
     text-decoration: none;
 
-        &.active {
-            font-weight: bold;
-        }
+    &:hover {        
+        border-bottom: 1px solid;
+    }
+
+    &.active {
+        font-weight: bold;
+    }
 `;
 
 export const List = styled.ul`
