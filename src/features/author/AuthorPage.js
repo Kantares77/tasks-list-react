@@ -13,7 +13,7 @@ export default () => (
                         <strong>Zawodowo</strong><br />Przeszło od 20 lat pracuję w branży automotive piastując po drodze różne stanowiska
                         m. in. inżyniera metrologii, inżyniera laboratorium, inżyniera jakości w działach wtrysku i montażu,
                         koordynatora zmian inżynieryjnych.<br />Zatem skąd zainteresowanie <em>Frontend'em?</em><br />
-                        Po prostu z potrzeby <em>"oderwania"</em> się od codziennej monotonii pracy/zadań, którymi param się od tak dawna, a poza słyszałem, że podobno na naukę 
+                        Po prostu z potrzeby <em>"oderwania"</em> się od codziennej monotonii pracy/zadań, którymi param się od tak dawna, a poza tym słyszałem, że podobno na naukę 
                         nigdy nie jest za poźno🤓
                         Zapewne też chęć sprawdzenia się na innym polu, a przy sprzyjającym szczęściu zmiana branży, chociaż zdaję sobię sprawę, że na rynku
                         jest mnóstwo utalentowanych ludzi, którzy swoją wiedzą mogli by zawstydzić, żeby nie powiedzieć <em>"zagiąć"</em> niejednego...ale gdyby nawet 
